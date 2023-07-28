@@ -8,8 +8,13 @@ use PHPUnit\Framework\TestCase;
 
 final class Test extends TestCase
 {
+    public function setup(): void
+    {
+        parent::setUp();
+    }
+
     public function testFoo(): void
     {
-        self::assertTrue(true);
+        $this->assertTrue(true);
     }
 }

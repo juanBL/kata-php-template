@@ -7,4 +7,4 @@ start:
 init: start test
 
 install:
-	docker-compose run --rm composer require $(dependency)
+	docker-compose run --rm composer require $(dependency) --dev
