@@ -1,0 +1,24 @@
+{
+  "name": "katas/php-template",
+  "description": "PHP template for katas.",
+  "type": "project",
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kata\\": ["src"]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kata\\Tests\\": ["tests"]
+    }
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}
